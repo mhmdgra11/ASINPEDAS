@@ -55,6 +55,7 @@
                                 <th>Laporan</th>
                                 <th>Penugasan</th>
                                 <th>Tanggal</th>
+                                <th>Status</th>
                                 <th class='center'>Aksi</th>
                             </tr>
                         </thead>
@@ -83,6 +84,7 @@
                       <td width='20'>$no</td>
                       <td width='150'>$data[id_laporan]</td>
                       <td width='150'>$data[id_penugasan]</td>
+                      <td width='150'>$data[status]</td>
                       <td width='150'>$data[tanggal]</td>
                       <td width='150' class='center'>
                         <div class=''>
