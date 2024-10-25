@@ -14,7 +14,7 @@ if (isset($_POST['cari'])) {
       <?php
       if ($_SESSION['level'] == "admin") {
         echo "<a class='btn btn-info' href='?page=tambah'>
-      <i class='glyphicon glyphicon-plus'></i> Tambah </a>";
+      <i class='icon-copy ion-plus'></i> Tambah </a>";
       } else if ($_SESSION['level'] == "user") {
         echo "Gak boleh masukin data";
       }

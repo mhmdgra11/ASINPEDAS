@@ -1,10 +1,10 @@
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
-	<title>DeskApp Dashboard</title>
+	<title>ASINPEDAS</title>
 
 	<!-- Site favicon -->
 	<!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
-
+	<link rel="shortcut icon" href="assets/img/logoo.png">
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 

@@ -11,7 +11,7 @@ if (isset($_POST['cari'])) {
         <div class="page-header">
 
             <a class="btn btn-info" href="?page=perjalanan-tambah">
-                <i class="glyphicon glyphicon-plus"></i> Tambah
+                <i class="icon-copy ion-plus"></i> Tambah
             </a>
 
             <div class="pull-right btn-tambah">
@@ -118,22 +118,22 @@ if (isset($_POST['cari'])) {
                       <td width='150'>$data[tempat]</td>
                       <td width='150'>$data[tanggal] - $data[waktu]</td>
                       <td width='150' class='center'>
-                        <div class=''>
+                        <div class=''>                                                 
 
-                       <a data-toggle='tooltip' data-placement='top' title='Penugasan' style='margin-right:5px' class='btn btn-primary btn-sm' href='?page=tambah-penugasan&id=$data[id_perjalanan]'> <i class='glyphicon glyphicon-plus'></i></a>
+                       <a data-toggle='tooltip' data-placement='top' title='Penugasan' style='margin-right:2px' class='btn btn-primary btn-sm' href='?page=tambah-penugasan&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-street-view'></i></a>
 
-                        <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:5px' class='btn btn-success btn-sm' href='?page=perjalanan-detail&id=$data[id_perjalanan]'> <i class='glyphicon glyphicon-eye-open'></i> </a> 
+                        <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:2px' class='btn btn-success btn-sm' href='?page=perjalanan-detail&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-eye'></i> </a> 
 
-                        <a data-toggle='tooltip' data-placement='top' title='Print' style='margin-right:5px' class='btn btn-warning btn-sm' href='?page=perjalanan-print-detail&id=$data[id_perjalanan]' target='_blank'> <i class='glyphicon glyphicon-print'></i> </a>
+                        <a data-toggle='tooltip' data-placement='top' title='Print' style='margin-right:2px' class='btn btn-warning btn-sm' href='?page=perjalanan-print-detail&id=$data[id_perjalanan]' target='_blank'> <i class='icon-copy fa fa-print'></i> </a>
 
-                        <a data-toggle='tooltip' data-placement='top' title='Edit' style='margin-right:5px' class='btn btn-primary btn-sm' href='?page=perjalanan-edit&id=$data[id_perjalanan]'> <i class='glyphicon glyphicon-edit'></i></a>
+                        <a data-toggle='tooltip' data-placement='top' title='Edit' style='margin-right:2px' class='btn btn-primary btn-sm' href='?page=perjalanan-edit&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-edit'></i></a>
                         
-                        <a data-toggle='tooltip' data-placement='top' title='Kirim' style='margin-right:5px' class='btn btn-info btn-sm' href='?page=perjalanan-kirim&id=$data[id_perjalanan]'><i class='glyphicon glyphicon-share'></i></a>  
+                        <a data-toggle='tooltip' data-placement='top' title='Kirim' style='margin-right:2px' class='btn btn-info btn-sm' href='?page=perjalanan-kirim&id=$data[id_perjalanan]'><i class='icon-copy fa fa-share-square-o'></i></a>  
                                                 
-                                                ";
-
+                                                ";                            
+                                                                       
                             ?>
-                                <a data-toggle="tooltip" data-placement="top" title="Hapus" class="btn btn-danger btn-sm" href="?page=perjalanan-hapus&id=<?php echo $data['id_perjalanan']; ?>" onclick="return confirm('Anda yakin ingin menghapus <?php echo $data['keterangan']; ?>?');"> <i class="glyphicon glyphicon-trash"></i></a>
+                                <a data-toggle="tooltip" data-placement="top" title="Hapus" class="btn btn-danger btn-sm" href="?page=perjalanan-hapus&id=<?php echo $data['id_perjalanan']; ?>" onclick="return confirm('Anda yakin ingin menghapus <?php echo $data['keterangan']; ?>?');"> <i class="icon-copy fa fa-trash"></i></a>
                             <?php
                                 echo "
                         </div>
