@@ -37,7 +37,7 @@
         </ul>
 
         <div class="form-group">
-            <a href="index.php" class="btn btn-default btn-reset">Kembali</a>
+            <a href="index.php"class="btn btn-info btn-submit">Kembali</a>
         </div>
     </div>
     </form>
