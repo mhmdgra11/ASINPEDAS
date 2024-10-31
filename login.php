@@ -17,6 +17,7 @@
 		<div class="login-box bg-white box-shadow pd-30 border-radius-5">
 			<img src="vendors/images/login-img.png" alt="login" class="login-img">
 			<h2 class="text-center mb-30">Login</h2>
+			
 			<form action="cek_login.php" method="post">
 				<div class="input-group custom input-group-lg">
 					<input type="text" class="form-control" placeholder="id_user" name="id_user">

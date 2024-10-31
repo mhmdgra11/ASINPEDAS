@@ -2,11 +2,14 @@
 include 'config/database.php';
 
 $id_perjalanan = $_POST['id_perjalanan'];
-                $tempat  = $_POST['tempat'];
-                $tanggal   = $_POST['tanggal'];
-                $waktu   = $_POST['waktu'];
-                $jenis_tugas   = $_POST['jenis_tugas'];
-                $keterangan   = $_POST['keterangan'];
+$tempat        = $_POST['tempat'];
+$tanggal       = $_POST['tanggal'];
+$waktu         = $_POST['waktu'];
+$keterangan    = $_POST['keterangan'];
+$telp          = $_POST['telp'];
+$email         = $_POST['email'];
+$status        = $_POST['status'];
+$lampiran      = $_POST['lampiran'];
 
 $rand = rand();
 $ekstensi =  array('png', 'jpg', 'jpeg', 'pdf');

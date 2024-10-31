@@ -24,7 +24,11 @@ require_once "config/database.php";
 
 
 	<?php include('include/header.php'); ?>
-	<?php include('menu/menu.php'); ?>
+	<?php if ($_SESSION['level'] == "admin") {
+      include 'menu/menu.php';
+    } else if ($_SESSION['level'] == "pegawai") {
+      include 'menu/menu-user.php';
+    } ?>
 	<div class="main-container">
 		<div class="pd-ltr-20 customscroll customscroll-10-p height-100-p xs-pd-20-10">
 			<div class="min-height-200px">

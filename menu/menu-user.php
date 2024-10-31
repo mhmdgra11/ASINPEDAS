@@ -1,18 +1,26 @@
-      <!-- Brand -->
-      <div class="navbar-header">
-          <a class="navbar-brand" href="index.php">
-              <i class="glyphicon glyphicon-user"></i>
-              Penugasan </a>
-      </div>
+<div class="left-side-bar">
+		<div class="brand-logo">
+			<a href="index.php">
+				<img src="src/images/logo_as.png" width="120" >
+			</a>
+		</div>
+		<div class="menu-block customscroll">
+			<div class="sidebar-menu">
+				<ul id="accordion-menu">
+					<li>
+						<a href="index.php" class="dropdown-toggle no-arrow">
+							<span class="fa fa-address-card"></span><span class="mtext">Penugasan</span>
+						</a>
+					</li>
 
-      <div class="navbar-header">
-          <a class="navbar-brand" href="?page=tampil-laporan">
-              <i class="glyphicon glyphicon-share"></i>
-              Laporan </a>
-      </div>
+                    <li>
+						<a href="?page=tampil-laporan" class="dropdown-toggle no-arrow">
+							<span class="fa fa-calendar-o"></span><span class="mtext">Laporan</span>
+						</a>
+					</li>
 
-      <div class="navbar-header">
-          <a class="navbar-brand" href="logout.php">
-              <i class="glyphicon glyphicon-off"></i>
-          </a>
-      </div>
+			    </ul>
+					
+			</div>
+		</div>
+	</div>

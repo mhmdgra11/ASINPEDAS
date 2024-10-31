@@ -50,7 +50,6 @@
               <label class="col-sm-2 control-label">Jenis Tugas</label>
               <div class="col-sm-3">
                 <select class="form-control" name="jenis_tugas" placeholder="Pilih Tugas" required>
-                  <option value=""></option>
                   <option value="admin">giat_liputan</option>
                   <option value="pegawai">seminar</option>
                   <option value="pegawai">sosialisasi</option>

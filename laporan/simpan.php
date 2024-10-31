@@ -2,8 +2,8 @@
 include 'config/database.php';
 
 $id_penugasan  = $_POST['id_penugasan'];
-$tanggal       = $_POST['tanggal'];
-$status        = $_POST['status'];
+$id_perjalanan  = $_POST['id_perjalanan'];
+$status       = $_POST['status'];
 
 
 
@@ -19,7 +19,7 @@ if (!in_array($ext, $ekstensi)) {
     if ($ukuran < 1044070) {
         $xx = $rand . '_' . $filename;
         move_uploaded_file($_FILES['foto']['tmp_name'], 'laporan/gambar/' . $rand . '_' . $filename);
-        mysqli_query($db, "INSERT INTO laporan (id_penugasan, tanggal, status,  foto, ket) VALUES ('$id_penugasan','$tanggal', '$status', '$xx')");
+        mysqli_query($db, "INSERT INTO laporan (id_penugasan, id_perjalanan, status,  foto) VALUES ('$id_penugasan', '$id_perjalanan', '$status', '$xx')");
         header("location:?page=tampil-penugasan&alert=2");
     } else {
         header("location:?page=tampil-penugasan&alert=1");

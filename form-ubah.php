@@ -37,14 +37,14 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">Username</label>
               <div class="col-sm-3">
-                <input type="text" class="form-control" name="username" autocomplete="off" required>
+                <input type="text" class="form-control" name="username" value="<?php echo $username; ?>" required>
               </div>
             </div>
 
             <div class="form-group">
               <label class="col-sm-2 control-label">Password</label>
               <div class="col-sm-3">
-                <input type="password" class="form-control" name="password" autocomplete="off" required>
+                <input type="password" class="form-control" name="password" value="<?php echo $password; ?>" required>
               </div>
             </div>
 
@@ -78,14 +78,14 @@
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Telp</label>
                         <div class="col-sm-3">
-                            <input type="text" class="form-control" name="telp" autocomplete="off" required>
+                            <input type="text" class="form-control" name="telp" value="<?php echo $telp; ?>"  required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="col-sm-2 control-label">Email</label>
                         <div class="col-sm-3">
-                            <input type="email" class="form-control" name="email" autocomplete="off" required>
+                            <input type="email" class="form-control" name="email" value="<?php echo $email; ?>" required>
                         </div>
                     </div>
 
@@ -93,7 +93,6 @@
               <label class="col-sm-2 control-label">Level</label>
               <div class="col-sm-3">
                 <select class="form-control" name="level" placeholder="Pilih Level" required>
-                  <option value=""></option>
                   <option value="admin">Admin</option>
                   <option value="pegawai">Karyawan</option>
                 </select>
@@ -104,7 +103,7 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">NIP</label>
               <div class="col-sm-2">
-                <input type="text" class="form-control" name="nip" required>
+                <input type="text" class="form-control" name="nip" value="<?php echo $nip; ?>"required>
               </div>
             </div>
 

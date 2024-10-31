@@ -8,10 +8,8 @@ if (isset($_GET['id'])) {
         $tanggal   = $data['tanggal'];
         $waktu   = $data['waktu'];
         $keterangan   = $data['keterangan'];
-        $telp     = $data['telp'];
-        $email    = $data['email'];
-        $status    = $data['status'];
-        $lampiran    = $data['lampiran'];
+        $jenis_tugas   = $data['jenis_tugas'];
+        
         
     }
 }
@@ -32,64 +30,49 @@ if (isset($_GET['id'])) {
             <div class="form-group">
                 <label class="col-sm-2 control-label">Tempat</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" name="tempat" value="<?php echo $nama; ?>" Required>
+                    <input type="text" class="form-control" name="tempat" value="<?php echo $tempat; ?>" Required>
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="col-sm-2 control-label">Tanggal</label>
                 <div class="col-sm-2">
-                    <input type="date" class="form-control" name="tanggal" value="<?php echo $nama; ?>" Required>
+                    <input type="date" class="form-control" name="tanggal" value="<?php echo $tanggal; ?>" Required>
                 </div>
             </div>
 
             <div class="form-group">
                 <label class="col-sm-2 control-label">Pukul</label>
                 <div class="col-sm-2">
-                    <input type="time" class="form-control" name="waktu" value="<?php echo $nama; ?>" Required>
+                    <input type="time" class="form-control" name="waktu" value="<?php echo $pukul; ?>" Required>
                 </div>
             </div>
 
             
             <div class="form-group">
-                        <label class="col-sm-2 control-label">STATUS</label>
-                        <div class="col-sm-3">
-                            <select class="form-control" name="status" placeholder="Pilih Keterangan" required>
-                                <option value="selesai">Selesai</option>
-                                <option value="delay">Delay</option>
-                                <option value="batal">Batal</option>
-                            </select>
-                        </div>
-                    </div>
-
-            <div class="form-group">
-                <label class="col-sm-2 control-label">No Telp</label>
-                <div class="col-sm-2">
-                    <input type="text" class="form-control" name="telp" autocomplete="off" value="<?php echo $telp; ?>" required>
-                </div>
+              <label class="col-sm-2 control-label">Keterangan</label>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" name="keterangan" value="<?php echo $keterangan; ?>" required>
+              </div>
             </div>
 
             <div class="form-group">
-                <label class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-2">
-                    <input class="form-control" name="email" autocomplete="off" value="<?php echo $email; ?>" required>
-                </div>
+              <label class="col-sm-2 control-label">Jenis Tugas</label>
+              <div class="col-sm-3">
+                <select class="form-control" name="jenis_tugas" placeholder="Pilih Tugas" required>
+                  <option value="admin">giat_liputan</option>
+                  <option value="pegawai">seminar</option>
+                  <option value="pegawai">sosialisasi</option>
+                  <option value="pegawai">rapat</option>
+                </select>
+              </div>
             </div>
-
-            <div class="form-group">
-                        <label class="col-sm-2 control-label">LAMPIRAN</label>
-                        <div class="col-sm-3">
-                            <input type="file" class="form-control" name="lampiran" autocomplete="off" required>
-                        </div>
-                    </div>
-
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <input type="submit" class="btn btn-info btn-submit" name="update" value="Update">
                 </div>
             </div>
         </form>
-        <a href="?page=pegawai-tampil" class="btn btn-default btn-reset">Kembali</a>
 
         <hr>
     </div>

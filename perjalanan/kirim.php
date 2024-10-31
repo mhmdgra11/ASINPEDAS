@@ -27,16 +27,16 @@
         <div class="form-group">
             <center>
 
-                <a href="https://api.whatsapp.com/send?phone=628115402372&text=<?php echo "*DETAIL DATA PEGAWAI*" .  "%0Aid_perjalanan : " . $id_perjalanan . "%0ANama Karyawan : " . $nama . "%0Atempat : " . $tempat . "%0Awaktu_tgl : " . $waktu_tgl . "%0ANo. Telp : " . $telp . "%0AEmail : " . $email . "%0AFoto : " . $foto; ?>" class=" btn btn-default" target="_blank"><i class="glyphicon glyphicon-share"></i> Admin </a>
+                <a href="https://api.whatsapp.com/send?phone=6282115402372&text=<?php echo "*DETAIL DATA PEGAWAI*" .  "%0Aid_perjalanan : " . $id_perjalanan . "%0ANama Karyawan : " . $username . "%0Atempat : " . $tempat . "%0Awaktu_tgl : " . $waktu ."%0Awaktu_tgl : " . $tanggal; ?>" class=" btn btn-default" target="_blank"><i button type="button" class="btn btn-info">Admin </button></i> </a>
 
-                <a href="https://api.whatsapp.com/send?phone=<?php echo $telp; ?>&text=<?php echo "*DETAIL DATA PEGAWAI*" .  "%0Aid_perjalanan : " . $id_perjalanan . "%0ANama Karyawan : " . $nama . "%0Atempat : " . $tempat . "%0Awaktu_tgl : " . $waktu_tgl . "%0ANo. Telp : " . $telp . "%0AEmail : " . $email . "%0AFoto : " . $foto; ?>" class=" btn btn-default" target="_blank"><i class="glyphicon glyphicon-share"></i> <?php echo $nama; ?> </a>
+                <a href="https://api.whatsapp.com/send?phone=<?php echo $telp; ?>&text=<?php echo "*DETAIL DATA PEGAWAI*" .  "%0Aid_perjalanan : " . $id_perjalanan . "%0ANama Karyawan : " . $username . "%0Atempat : " . $tempat . "%0Awaktu_tgl : " . $waktu ."%0Awaktu_tgl : " . $tanggal; ?>" target="_blank"><i button type="button" class="btn btn-info">User </button></i> </a> <?php echo $username; ?> </a>
 
             </center>
         </div>
 
         <div class="form-group">
             <center>
-                <a href="?page=pegawai-tampil" class="btn btn-default">Kembali</a>
+                <a href="?page=perjalanan-tampil" <i button type="button" class="btn btn-info">Kembali </button></i> </a>
             </center>
         </div>
 

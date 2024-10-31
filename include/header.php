@@ -20,6 +20,10 @@
 					<div class="dropdown-menu dropdown-menu-right">
 						<a class="dropdown-item" href="login.php"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a>
 					</div>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+					</div>
 				</div>
 			</div>
 			

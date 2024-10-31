@@ -13,7 +13,7 @@ $id_penugasan  = $_GET['id'];
 
     <div class="panel panel-default">
       <div class="panel-body">
-        <form class="form-horizontal" method="POST" action="?page=simpan-laporan">
+        <form class="form-horizontal" method="POST" action="?page=simpan-laporan" enctype="multipart/form-data">
           <div class="form-group">
             <label class="col-sm-2 control-label">Perjalanan</label>
             <div class="col-sm-3">
@@ -60,8 +60,7 @@ $id_penugasan  = $_GET['id'];
           <div class="form-group">
               <label class="col-sm-2 control-label">Keterangan</label>
               <div class="col-sm-3">
-                <select class="form-control" name="ket" placeholder="Pilih level" required>
-                  <option value=""></option>
+                <select class="form-control" name="status" placeholder="Pilih level" required>
                   <option value="Selesai">Selesai</option>
                   <option value="Delay">Delay</option>
                   <option value="Batal">Batal</option>
@@ -72,7 +71,7 @@ $id_penugasan  = $_GET['id'];
             <div class="form-group">
                         <label class="col-sm-2 control-label">LAMPIRAN</label>
                         <div class="col-sm-3">
-                            <input type="file" class="form-control" name="lampiran" autocomplete="off" required>
+                            <input type="file" class="form-control" name="foto" autocomplete="off" required>
                         </div>
                     </div>
 

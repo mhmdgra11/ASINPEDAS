@@ -129,8 +129,7 @@ if (isset($_POST['cari'])) {
                         <a data-toggle='tooltip' data-placement='top' title='Edit' style='margin-right:2px' class='btn btn-primary btn-sm' href='?page=perjalanan-edit&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-edit'></i></a>
                         
                         <a data-toggle='tooltip' data-placement='top' title='Kirim' style='margin-right:2px' class='btn btn-info btn-sm' href='?page=perjalanan-kirim&id=$data[id_perjalanan]'><i class='icon-copy fa fa-share-square-o'></i></a>  
-                                                
-                                                ";                            
+                        ";                            
                                                                        
                             ?>
                                 <a data-toggle="tooltip" data-placement="top" title="Hapus" class="btn btn-danger btn-sm" href="?page=perjalanan-hapus&id=<?php echo $data['id_perjalanan']; ?>" onclick="return confirm('Anda yakin ingin menghapus <?php echo $data['keterangan']; ?>?');"> <i class="icon-copy fa fa-trash"></i></a>

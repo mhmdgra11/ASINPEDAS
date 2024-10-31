@@ -44,7 +44,7 @@
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><b>Data Penugasan</b> <?php echo $_SESSION['id_user'] ." - ". $_SESSION['level']; ?></h3>
+                <h3 class="panel-title"><b>Buat Laporan</b> <?php echo $_SESSION['id_user'] ." - ". $_SESSION['level']; ?></h3>
             </div>
             <div class="panel-body">
                 <div class="table-responsive">
@@ -54,8 +54,7 @@
                                 <th>No.</th>
                                 <th>Penugasan</th>
                                 <th>User</th>
-                                <th>Perjalanan</th>
-                                <th>Status</th>                                
+                                <th>Perjalanan</th>                               
                                 <th class='center'>Aksi</th>
                             </tr>
                         </thead>
@@ -67,7 +66,7 @@
                             $idu = $_SESSION['id_user'];
 
 
-                            $jumlah_record = mysqli_query($db, "SELECT penugasan.*, user.username, perjalanan.tanggal, perjalanan.keterangan FROM penugasan JOIN user ON user.id_user = penugasan.id_user JOIN perjalanan ON perjalanan.id_perjalanan = penugasan.id_perjalanan ") or die('Ada kesalahan pada query jumlah_record: ' . mysqli_error($db));
+                            $jumlah_record = mysqli_query($db, "SELECT penugasan.*, user.username, perjalanan.tanggal, perjalanan.keterangan FROM penugasan JOIN user ON user.id_user = penugasan.id_user JOIN perjalanan ON perjalanan.id_perjalanan = penugasan.id_perjalanan") or die('Ada kesalahan pada query jumlah_record: ' . mysqli_error($db));
 
                             $jumlah  = mysqli_num_rows($jumlah_record);
                             $halaman = ceil($jumlah / $batas);
@@ -85,10 +84,11 @@
                       <td width='150'>$data[id_penugasan]</td>
                       <td width='150'>$data[username]</td>
                       <td width='150'>$data[keterangan]</td>
-                      <td width='150'>$data[status]</td>
                       <td width='150' class='center'>
                         <div class=''>
-                      <a data-toggle='tooltip' data-placement='top' title='Buat Laporan' style='margin-right:2px' class='btn btn-primary btn-sm' href='?page=tambah-status&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-check-circle'></i></a>";?>
+                      <a data-toggle='tooltip' data-placement='top' title='Buat Laporan' style='margin-right:2px' class='btn btn-primary btn-sm' href='?page=tambah-status&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-check-circle'></i></a>
+                      
+                      <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:2px' class='btn btn-success btn-sm' href='?page=perjalanan-detail&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-eye'></i> </a>";?>
                             <?php
                                 echo "
                         </div>
