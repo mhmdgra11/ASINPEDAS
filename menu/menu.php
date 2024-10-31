@@ -22,15 +22,11 @@
 
                     <li>
 						<a href="?page=tampil-laporan" class="dropdown-toggle no-arrow">
-							<span class="fa fa-calendar-o"></span><span class="mtext">Laporan</span>
+							<span class="fa fa-calendar-o"></span><span class="mtext">Penugasan</span>
 						</a>
 					</li>
 
-						<a href="logout.php" class="dropdown-toggle no-arrow">
-							<span class="fa fa-sign-out"></span><span class="mtext">Keluar</span>
-						</a>
-					</li>
-    </ul>
+			    </ul>
 					
 			</div>
 		</div>

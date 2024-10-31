@@ -7,8 +7,6 @@ $id_perjalanan = $_POST['id_perjalanan'];
                 $waktu   = $_POST['waktu'];
                 $jenis_tugas   = $_POST['jenis_tugas'];
                 $keterangan   = $_POST['keterangan'];
-                $status    = $_POST['status'];
-                $lampiran    = $_POST['lampiran'];
 
 $rand = rand();
 $ekstensi =  array('png', 'jpg', 'jpeg', 'pdf');
@@ -22,7 +20,7 @@ if (!in_array($ext, $ekstensi)) {
     if ($ukuran < 1044070) {
         $xx = $rand . '_' . $filename;
         move_uploaded_file($_FILES['lampiran']['tmp_name'], 'perjalanan/gambar/' . $rand . '_' . $filename);
-        mysqli_query($db, "INSERT INTO perjalanan VALUES('$id_perjalanan','$tempat','$tanggal','$waktu','$jenis_tugas','$keterangan','$status','$xx')");
+        mysqli_query($db, "INSERT INTO perjalanan VALUES('$id_perjalanan','$tempat','$tanggal','$waktu','$jenis_tugas','$xx')");
         header("location:?page=perjalanan-tampil&alert=2");
     } else {
         header("location:?page=perjalanan-tampil&alert=1");

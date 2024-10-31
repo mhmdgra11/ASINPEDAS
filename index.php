@@ -18,7 +18,7 @@ require_once "config/database.php";
   session_start();
 
   if ($_SESSION['level'] == "") {
-    header("location:login.php?pesan=gagal");
+    header("location:login.php?");
   }
   ?>
 

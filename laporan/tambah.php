@@ -44,18 +44,6 @@ $id_penugasan  = $_GET['id'];
                 <input type="date" class="form-control" name="tanggal" autocomplete="off" required>
               </div>
             </div>
-
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Keterangan</label>
-              <div class="col-sm-3">
-                <select class="form-control" name="ket" placeholder="Pilih level" required>
-                  <option value=""></option>
-                  <option value="Selesai">Selesai</option>
-                  <option value="Delay">Delay</option>
-                  <option value="Batal">Batal</option>
-                </select>
-              </div>
-            </div>
             
             <div class="form-group">
                         <label class="col-sm-2 control-label">Foto</label>

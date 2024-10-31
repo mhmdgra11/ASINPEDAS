@@ -59,25 +59,6 @@
               </div>
             </div>
 
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Status</label>
-              <div class="col-sm-3">
-                <select class="form-control" name="status" placeholder="Pilih status" required>
-                  <option value=""></option>
-                  <option value="selesai">Selesai</option>
-                  <option value="delay">Delay</option>
-                  <option value="batal">Batal</option>
-                </select>
-              </div>
-            </div>
-            
-            <div class="form-group">
-                        <label class="col-sm-2 control-label">LAMPIRAN</label>
-                        <div class="col-sm-3">
-                            <input type="file" class="form-control" name="lampiran" autocomplete="off" required>
-                        </div>
-                    </div>
-
             <hr />
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
