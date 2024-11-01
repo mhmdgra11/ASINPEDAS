@@ -44,7 +44,7 @@
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Buat Laporan <?php echo $_SESSION['id_user'] ." - ". $_SESSION['level']; ?></h3>
+                <h3 class="panel-title"><B>Data Tugas Anda hari Ini </B> <?php echo $_SESSION['id_user'] ." - ". $_SESSION['level']; ?></h3>
             </div>
             <div class="panel-body">
                 <div class="table-responsive">

@@ -71,7 +71,7 @@ if (isset($_POST['cari'])) {
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Data perjalanan</h3>
+                <h3 class="panel-title"><b>Data Perjalanan</B> </h3>
             </div>
             <div class="panel-body">
                 <div class="table-responsive">
