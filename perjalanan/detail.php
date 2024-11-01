@@ -52,7 +52,7 @@
         </ul>
 
         <div class="form-group">
-            <a href="index.php" class="btn btn-default btn-reset">Kembali</a>
+            <a href="?page=perjalanan-tampil" class="btn btn-primary">Kembali</a>
         </div>
     </div>
     </form>

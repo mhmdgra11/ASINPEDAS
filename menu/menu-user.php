@@ -9,7 +9,7 @@
 				<ul id="accordion-menu">
 					<li>
 						<a href="index.php" class="dropdown-toggle no-arrow">
-							<span class="fa fa-address-card"></span><span class="mtext">Penugasan</span>
+							<span class="fa fa-address-card"></span><span class="mtext">Perjalanan</span>
 						</a>
 					</li>
 

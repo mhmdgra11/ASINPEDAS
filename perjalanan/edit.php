@@ -44,7 +44,7 @@ if (isset($_GET['id'])) {
             <div class="form-group">
                 <label class="col-sm-2 control-label">Pukul</label>
                 <div class="col-sm-2">
-                    <input type="time" class="form-control" name="waktu" value="<?php echo $pukul; ?>" Required>
+                    <input type="time" class="form-control" name="waktu" value="<?php echo $waktu; ?>" Required>
                 </div>
             </div>
 

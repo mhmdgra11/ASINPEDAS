@@ -15,14 +15,14 @@
 
 					<li>
 						<a href="?page=perjalanan-tampil" class="dropdown-toggle no-arrow">
-							<span class="fa fa-map-o"></span><span class="mtext">Perjalanan</span>
+							<span class="fa fa-map-o"></span><span class="mtext">Penugasan</span>
 						</a>
 					</li>
                     <li>
 
                     <li>
 						<a href="?page=tampil-laporan" class="dropdown-toggle no-arrow">
-							<span class="fa fa-calendar-o"></span><span class="mtext">Penugasan</span>
+							<span class="fa fa-calendar-o"></span><span class="mtext">Laporan</span>
 						</a>
 					</li>
 
