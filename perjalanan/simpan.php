@@ -1,31 +1,24 @@
 <?php
-include 'config/database.php';
+// Panggil koneksi database
+require_once "config/database.php";
 
-$id_perjalanan = $_POST['id_perjalanan'];
-$tempat        = $_POST['tempat'];
-$tanggal       = $_POST['tanggal'];
-$waktu         = $_POST['waktu'];
-$keterangan    = $_POST['keterangan'];
-$telp          = $_POST['telp'];
-$email         = $_POST['email'];
-$status        = $_POST['status'];
-$lampiran      = $_POST['lampiran'];
+if (isset($_POST['id_perjalanan'])) {
+	$id_perjalanan = $_POST['id_perjalanan'];
+                $tempat  = $_POST['tempat'];
+                $tanggal   = $_POST['tanggal'];
+                $waktu   = $_POST['waktu'];
+                $jenis_tugas   = $_POST['jenis_tugas'];
+                $keterangan   = $_POST['keterangan'];
 
-$rand = rand();
-$ekstensi =  array('png', 'jpg', 'jpeg', 'pdf');
-$filename = $_FILES['lampiran']['name'];
-$ukuran = $_FILES['lampiran']['size'];
-$ext = pathinfo($filename, PATHINFO_EXTENSION);
+	// perintah query untuk menyimpan data ke tabel is_siswa
+	$query = mysqli_query($db, "INSERT INTO perjalanan (id_perjalanan, tempat, tanggal, waktu, jenis_tugas, keterangan) VALUES('$id_perjalanan','$tempat','$tanggal','$waktu','$jenis_tugas','$keterangan')");
 
-if (!in_array($ext, $ekstensi)) {
-    header("location:?page=perjalanan-tampil&alert=1");
-} else {
-    if ($ukuran < 1044070) {
-        $xx = $rand . '_' . $filename;
-        move_uploaded_file($_FILES['lampiran']['tmp_name'], 'perjalanan/gambar/' . $rand . '_' . $filename);
-        mysqli_query($db, "INSERT INTO perjalanan VALUES('$id_perjalanan','$tempat','$tanggal','$waktu','$jenis_tugas','$xx')");
-        header("location:?page=perjalanan-tampil&alert=2");
-    } else {
-        header("location:?page=perjalanan-tampil&alert=1");
-    }
+	// cek hasil query
+	if ($query) {
+		// jika berhasil tampilkan pesan berhasil insert data
+		header('location: ?page=perjalanan-tampil&alert=2');
+	} else {
+		// jika gagal tampilkan pesan kesalahan
+		header('location: ?page=perjalanan-tampil&alert=1');
+	}
 }

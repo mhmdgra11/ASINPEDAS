@@ -86,9 +86,9 @@
                       <td width='150'>$data[keterangan]</td>
                       <td width='150' class='center'>
                         <div class=''>
-                      <a data-toggle='tooltip' data-placement='top' title='Buat Laporan' style='margin-right:2px' class='btn btn-primary btn-sm' href='?page=tambah-status&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-check-circle'></i></a>
+                      <a data-toggle='tooltip' data-placement='top' title='Buat Laporan' style='margin-right:2px' class='btn btn-primary btn-sm' href='?page=tambah-status-user&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-check-circle'></i></a>
                       
-                      <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:2px' class='btn btn-success btn-sm' href='?page=perjalanan-detail&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-eye'></i> </a>";?>
+                      <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:2px' class='btn btn-success btn-sm' href='?page=perjalanan-detail-user&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-eye'></i> </a>";?>
                             <?php
                                 echo "
                         </div>

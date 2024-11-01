@@ -58,6 +58,11 @@
               </div>
             </div>
 
+            
+           <input type="hidden" class="from-control" name="lampiran" value="">
+           <input type="hidden" class="from-control" name="status" value="">
+
+
             <hr />
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">

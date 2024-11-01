@@ -89,7 +89,7 @@
                       <td width='150' class='center'>
                         <div class=''>
 
-                       <a data-toggle='tooltip' data-placement='top' title='Edit' style='margin-right:5px' class='btn btn-primary btn-sm' href='?page=tambah-laporan&id=$data[id_penugasan]'> <i class='glyphicon glyphicon-plus'></i></a>";?>
+                        <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:2px' class='btn btn-success btn-sm' href='?page=perjalanan-detail-user&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-eye'></i> </a>";?>
                             <?php
                                 echo "
                         </div>
