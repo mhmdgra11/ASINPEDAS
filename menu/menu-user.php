@@ -9,13 +9,13 @@
 				<ul id="accordion-menu">
 					<li>
 						<a href="index.php" class="dropdown-toggle no-arrow">
-							<span class="fa fa-address-card"></span><span class="mtext">Perjalanan</span>
+							<span class="fa fa-map-o"></span><span class="mtext">Perjalanan</span>
 						</a>
 					</li>
 
                     <li>
 						<a href="?page=tampil-laporan" class="dropdown-toggle no-arrow">
-							<span class="fa fa-calendar-o"></span><span class="mtext">Laporan</span>
+							<span class="icon-copy fa fa-pencil-square"></span><span class="mtext">Laporan</span>
 						</a>
 					</li>
 

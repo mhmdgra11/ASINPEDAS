@@ -22,7 +22,7 @@
 
                     <li>
 						<a href="?page=tampil-laporan" class="dropdown-toggle no-arrow">
-							<span class="fa fa-calendar-o"></span><span class="mtext">Laporan</span>
+							<span class="icon-copy fa fa-pencil-square"></span><span class="mtext">Laporan</span>
 						</a>
 					</li>
 
