@@ -4,13 +4,10 @@ require_once "config/database.php";
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" href="src/images/logo-login.png">
 	<?php include('include/head.php'); ?>
 	<style>
-    @media print {
-      .print {
-        display: none;
-      }
-    }
+   
   </style>
 </head>
 <body>

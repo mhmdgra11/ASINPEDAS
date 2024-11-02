@@ -13,9 +13,9 @@
         }
     }
     ?> 
-	<div class="login-wrap customscroll d-flex align-items-center flex-wrap justify-content-center pd-20">
+	<div class="login-wrap customscroll d-flex align-items-center flex-wrap justify-content-center pd-50">
 		<div class="login-box bg-white box-shadow pd-30 border-radius-5">
-			<img src="vendors/images/login-img.png" alt="login" class="login-img">
+			<center><img src="src/images/logo-login.png"width="200" height="auto" alt="login"></center>
 			<h2 class="text-center mb-30">Login</h2>
 			
 			<form action="cek_login.php" method="post">

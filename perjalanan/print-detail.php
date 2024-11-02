@@ -1,9 +1,14 @@
 <div class="row">
     <div class="col-md-12">
-        <br>
+        <div class="page-header">
+            <h4>
+                <i class="glyphicon glyphicon-edit"></i>
+                Detail data 
+            </h4>
+        </div> <!-- /.page-header -->
         <?php
         if (isset($_GET['id'])) {
-            $id_perjalanan   = $_GET['id'];
+            $id_perjalanan  = $_GET['id'];
             $query = mysqli_query($db, "SELECT * FROM perjalanan WHERE id_perjalanan='$id_perjalanan'") or die('Query Error : ' . mysqli_error($db));
             while ($data  = mysqli_fetch_assoc($query)) {
                 $id_perjalanan   = $data['id_perjalanan'];
@@ -13,14 +18,12 @@
                 $keterangan   = $data['keterangan'];
                 $status   = $data['status'];
                 $lampiran   = $data['lampiran'];
+                
             }
         }
         ?>
 
-<ul class="list-group">
-<li class="list-group-item active"><b>
-                    <center>Surat Tugas</center>
-                </b></li>
+        <ul class="list-group">
             <li class="list-group-item active">DETAIL PERJALANAN</li>
             <li class="list-group-item"> ID_PERJALANAN : <?php echo $id_perjalanan; ?></li>
             <li class="list-group-item"> TANGGAL : <?php echo $tanggal; ?></li>
@@ -31,8 +34,8 @@
             <li class="list-group-item"> LAMPIRAN : <?php echo $lampiran; ?></li>
             <li class="list-group-item"> YANG DITUGASKAN : 
             <?php
-      $query = "SELECT penugasan.*, user.*  
-                                FROM penugasan JOIN user ON user.id_user = penugasan.id_user WHERE id_perjalanan = $id_perjalanan";
+      $query = "SELECT penugasan.*, user.username FROM penugasan JOIN user ON user.id_user = penugasan.id_user WHERE id_perjalanan = $id_perjalanan";
+  
       $result = mysqli_query($db, $query); 
       
       foreach ($result as $data) {
@@ -45,8 +48,12 @@
       }
       ?>
       </li>
+          
+        </ul>
 
-
+        <div class="form-group">
+            <a href="?page=perjalanan-tampil" class="btn btn-primary">Kembali</a>
+        </div>
     </div>
     </form>
 </div> <!-- /.panel-body -->

@@ -113,18 +113,18 @@ if (isset($_POST['cari'])) {
                             while ($data = mysqli_fetch_assoc($query)) {
 
                                 echo "  <tr>
-                      <td width='20'>$no</td>
+                      <td width='10'>$no</td>
                       <td width='150'>$data[jenis_tugas] - $data[keterangan]</td>
-                      <td width='150'>$data[tempat]</td>
+                      <td width='80'>$data[tempat]</td>
                       <td width='150'>$data[tanggal] - $data[waktu]</td>
-                      <td width='150' class='center'>
+                      <td width='175' class='center'>
                         <div class=''>                                                 
 
                        <a data-toggle='tooltip' data-placement='top' title='Penugasan' style='margin-right:2px' class='btn btn-primary btn-sm' href='?page=tambah-penugasan&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-street-view'></i></a>
 
                         <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:2px' class='btn btn-success btn-sm' href='?page=perjalanan-detail&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-eye'></i> </a> 
 
-                        <a data-toggle='tooltip' data-placement='top' title='Print' style='margin-right:2px' class='btn btn-warning btn-sm' href='?page=perjalanan-print-detail&id=$data[id_perjalanan]' target='_blank'> <i class='icon-copy fa fa-print'></i> </a>
+                        <a data-toggle='tooltip' data-placement='top' title='Print' style='margin-right:2px' class='btn btn-warning btn-sm' href='?page=perjalanan-print-detail&id=$data[id_perjalanan]' target='blank_'> <i class='icon-copy fa fa-print'></i> </a>
 
                         <a data-toggle='tooltip' data-placement='top' title='Edit' style='margin-right:2px' class='btn btn-primary btn-sm' href='?page=perjalanan-edit&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-edit'></i></a>
                         
@@ -176,7 +176,7 @@ if (isset($_POST['cari'])) {
                             <?php
                             }
                             ?>
-
+                            &nbsp;
                             <!-- Link halaman 1 2 3 ... -->
                             <?php
                             for ($x = 1; $x <= $halaman; $x++) { ?>
@@ -186,7 +186,7 @@ if (isset($_POST['cari'])) {
                             <?php
                             }
                             ?>
-
+                            &nbsp;
                             <!-- Button untuk halaman selanjutnya -->
                             <?php
                             if ($halaman_aktif >= $halaman) { ?>

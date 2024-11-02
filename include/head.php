@@ -3,8 +3,7 @@
 	<title>ASINPEDAS</title>
 
 	<!-- Site favicon -->
-	<!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
-	<link rel="shortcut icon" href="assets/img/logoo.png">
+	<link rel="shortcut icon" href="../src/images/logo-login.png">
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 

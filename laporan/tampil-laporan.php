@@ -44,7 +44,7 @@
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><b>Buat Laporan</b> <?php echo $_SESSION['id_user'] ." - ". $_SESSION['level']; ?></h3>
+                <h3 class="panel-title"><b>Buat Laporan</b></h3>
             </div>
             <div class="panel-body">
                 <div class="table-responsive">
@@ -52,7 +52,7 @@
                         <thead>
                             <tr>
                                 <th>No.</th>
-                                <th>Penugasan</th>
+                                <th>ID</th>
                                 <th>User</th>
                                 <th>Perjalanan</th>                               
                                 <th class='center'>Aksi</th>
@@ -81,10 +81,10 @@
 
                                 echo "  <tr>
                       <td width='20'>$no</td>
-                      <td width='150'>$data[id_penugasan]</td>
+                      <td width='10'>$data[id_penugasan]</td>
                       <td width='150'>$data[username]</td>
-                      <td width='150'>$data[keterangan]</td>
-                      <td width='150' class='center'>
+                      <td width='250'>$data[keterangan]</td>
+                      <td width='50' class='center'>
                         <div class=''>
                       
                       <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:2px' class='btn btn-success btn-sm' href='?page=perjalanan-detail&id=$data[id_perjalanan]'> <i class='icon-copy fa fa-eye'></i> </a>";?>
@@ -131,7 +131,7 @@
                             <?php
                             }
                             ?>
-
+&nbsp;
                             <!-- Link halaman 1 2 3 ... -->
                             <?php
                             for ($x = 1; $x <= $halaman; $x++) { ?>
@@ -141,7 +141,7 @@
                             <?php
                             }
                             ?>
-
+&nbsp;
                             <!-- Button untuk halaman selanjutnya -->
                             <?php
                             if ($halaman_aktif >= $halaman) { ?>

@@ -183,6 +183,7 @@ if (isset($_POST['cari'])) {
               <?php
               }
               ?>
+              &nbsp;
 
               <!-- Link halaman 1 2 3 ... -->
               <?php
@@ -193,7 +194,7 @@ if (isset($_POST['cari'])) {
               <?php
               }
               ?>
-
+&nbsp;
               <!-- Button untuk halaman selanjutnya -->
               <?php
               if ($halaman_aktif >= $halaman) { ?>
