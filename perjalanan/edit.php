@@ -18,7 +18,7 @@ if (isset($_GET['id'])) {
 <div class="row">
     <div class="col-md-12">
         <br>
-        <form class="form-horizontal" method="POST" action="?page=pegawai-update" enctype="multipart/form-data">
+        <form class="form-horizontal" method="POST" action="?page=perjalanan-update" enctype="multipart/form-data">
 
             <div class="form-group">
                 <label class="col-sm-2 control-label">ID_perjalanan</label>

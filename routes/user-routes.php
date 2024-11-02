@@ -25,5 +25,5 @@ else if ($_GET['page'] == 'tampil-laporan-user') {
 } elseif ($_GET['page'] == 'simpan-laporan-user') {
     include "laporan-user/simpan.php";
 } elseif ($_GET['page'] == 'perjalanan-detail-user') {
-    include "perjalanan/detail.php";
+    include "laporan-user/detail.php";
 }
