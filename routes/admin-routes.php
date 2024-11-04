@@ -3,13 +3,15 @@
 // Data user (pegawai)
 
 if (empty($_GET["page"])) {
-    include "tampil-data.php";
+    include "dashboard/dashboard-admin.php";
 } elseif ($_GET['page'] == 'tambah') {
     include "form-tambah.php";
 } elseif ($_GET['page'] == 'ubah') {
     include "form-ubah.php";
 } elseif ($_GET['page'] == 'detail') {
     include "detail.php";
+} elseif ($_GET['page'] == 'tampil-data') {
+    include "tampil-data.php";
 
     // perjalanan
 

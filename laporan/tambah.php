@@ -56,7 +56,7 @@ $id_penugasan  = $_GET['id'];
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
                 <input type="submit" class="btn btn-info btn-submit" name="simpan" value="Simpan">
-                <a href="index.php" class="btn btn-default btn-reset">Batal</a>
+                <a href="index.php" class="btn btn-default btn-outline-danger">Batal</a>
               </div>
             </div>
           </form>

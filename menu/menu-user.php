@@ -15,7 +15,7 @@
 
                     <li>
 						<a href="?page=tampil-laporan" class="dropdown-toggle no-arrow">
-							<span class="icon-copy fa fa-pencil-square"></span><span class="mtext">Laporan</span>
+							<span class="icon-copy fa fa-upload"></span><span class="mtext">Laporan</span>
 						</a>
 					</li>
 

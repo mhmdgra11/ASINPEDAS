@@ -1,6 +1,18 @@
 <div class="row">
     <div class="col-md-12">
-<br>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><b>Informasi Data Laporan</b></h3>
+        <nav aria-label="breadcrumb" role="navigation">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Laporan</li>
+            </ol>
+        </nav>
+    </div>
+
         <?php
         if (empty($_GET['alert'])) {
             echo "";
@@ -42,10 +54,6 @@
         }
         ?>
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><b>Buat Laporan</b></h3>
-            </div>
             <div class="panel-body">
                 <div class="table-responsive">
                     <table class="table table-striped table-hover">

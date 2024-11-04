@@ -1,4 +1,4 @@
-      <div class="left-side-bar">
+<div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="index.php">
 				<img src="src/images/logo_as.png" width="120" >
@@ -7,8 +7,15 @@
 		<div class="menu-block customscroll">
 			<div class="sidebar-menu">
 				<ul id="accordion-menu">
-					<li>
+
+				<li>
 						<a href="index.php" class="dropdown-toggle no-arrow">
+							<span class="fa fa-home"></span><span class="mtext">Home</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="?page=tampil-data" class="dropdown-toggle no-arrow">
 							<span class="fa fa-address-card"></span><span class="mtext">Data Karyawan</span>
 						</a>
 					</li>
@@ -22,11 +29,12 @@
 
                     <li>
 						<a href="?page=tampil-laporan" class="dropdown-toggle no-arrow">
-							<span class="icon-copy fa fa-pencil-square"></span><span class="mtext">Laporan</span>
+							<span class="fa fa-download"></span><span class="mtext">Laporan</span>
 						</a>
 					</li>
 
-			    </ul>
+						
+    </ul>
 					
 			</div>
 		</div>

@@ -2,13 +2,13 @@
 if (isset($_GET['id'])) {
     $id_perjalanan   = $_GET['id'];
     $query = mysqli_query($db, "SELECT * FROM perjalanan WHERE id_perjalanan='$id_perjalanan'") or die('Query Error : ' . mysqli_error($db));
-    while ($data  = mysqli_fetch_assoc($query)) {
+    while ($data            = mysqli_fetch_assoc($query)) {
         $id_perjalanan      = $data['id_perjalanan'];
-        $tempat  = $data['tempat'];
-        $tanggal   = $data['tanggal'];
-        $waktu   = $data['waktu'];
-        $keterangan   = $data['keterangan'];
-        $jenis_tugas   = $data['jenis_tugas'];
+        $tempat             = $data['tempat'];
+        $tanggal            = $data['tanggal'];
+        $waktu              = $data['waktu'];
+        $keterangan         = $data['keterangan'];
+        $jenis_tugas        = $data['jenis_tugas'];
         
         
     }

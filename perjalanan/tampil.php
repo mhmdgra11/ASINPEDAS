@@ -5,7 +5,16 @@ if (isset($_POST['cari'])) {
     $cari = "";
 }
 ?>
-
+   <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><b>Informasi Penugasan</b></h3>
+        <nav aria-label="breadcrumb" role="navigation">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Penugasan</li>
+            </ol>
+        </nav>
+    </div>
 <div class="row">
     <div class="col-md-12">
         <div class="page-header">
@@ -69,11 +78,7 @@ if (isset($_POST['cari'])) {
         }
         ?>
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><b>Data Perjalanan</B> </h3>
-            </div>
-            <div class="panel-body">
+           <div class="panel-body">
                 <div class="table-responsive">
                     <table class="table table-striped table-hover">
                         <thead>
