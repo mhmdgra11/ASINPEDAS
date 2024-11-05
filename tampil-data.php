@@ -190,12 +190,12 @@ if (isset($_POST['cari'])) {
               }
               ?>
               &nbsp;
-
+              &nbsp;
               <!-- Link halaman 1 2 3 ... -->
               <?php
               for ($x = 1; $x <= $halaman; $x++) { ?>
                 <li class="">
-                  <a href="?hal=<?php echo $x ?>"><?php echo $x ?></a>
+                  <a href="?hal=<?php echo $x ?>"> <?php echo $x ?> &nbsp </a>
                 </li>
               <?php
               }

@@ -2,7 +2,7 @@
 
 // Data user (pegawai)
 if (empty($_GET["page"])) {
-    include "laporan-user/tampil-penugasan.php";
+    include "dashboard/dashboard-user.php";
 
 // laporan
 }else if ($_GET['page'] == 'tampil-penugasan') {

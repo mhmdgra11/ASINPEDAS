@@ -9,7 +9,7 @@ $namas = $data['username'];
 		<div class="header-right">
 			<div class="brand-logo">
 				<a href="index.php">
-				<img src="vendors/images/logoo.png" width="50" >
+				<img src="vendors/images/ASINPEDAS2.png" width="50" >
 				</a>
 			</div>
 			<div class="menu-icon">

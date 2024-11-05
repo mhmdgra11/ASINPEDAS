@@ -6,9 +6,16 @@
 		</div>
 		<div class="menu-block customscroll">
 			<div class="sidebar-menu">
-				<ul id="accordion-menu">
-					<li>
+				<ul id="">
+
+				<li>
 						<a href="index.php" class="dropdown-toggle no-arrow">
+							<span class="fa fa-home"></span><span class="mtext">Home</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="?page=tampil-penugasan" class="dropdown-toggle no-arrow">
 							<span class="fa fa-map-o"></span><span class="mtext">Perjalanan</span>
 						</a>
 					</li>

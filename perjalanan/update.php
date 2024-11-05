@@ -2,7 +2,7 @@
 // Panggil koneksi database
 require_once "config/database.php";
 
-if (isset($_POST['simpan'])) {
+if (isset($_POST['update'])) {
 	if (isset($_POST['id_perjalanan'])) {
 		$id_perjalanan        = mysqli_real_escape_string($db, trim($_POST['id_perjalanan']));
 		$tempat  			  = $_POST['tempat'];
@@ -18,13 +18,18 @@ if (isset($_POST['simpan'])) {
 														jenis_tugas   = '$jenis_tugas',
 														keterangan 	  = '$keterangan'
 												  WHERE id_perjalanan = '$id_perjalanan'");
-		// cek hasil query
+		
+		 // jalankan query UPDATE berdasarkan nip yang pegawainya kita edit
+		 $query  = "UPDATE user SET tempat = '$tempat', tanggal = '$tanggal', waktu = '$waktu', jenis_tugas = '$jenis_tugas', keterangan = '$keterangan'";
+		 $query .= "WHERE id_perjalanan = '$id_perjalanan'";
+		 $result = mysqli_query($db, $query);
+		 // cek hasil query
 	if ($query) {
 		// jika berhasil tampilkan pesan berhasil insert data
-		header('location: ?page=perjalanan-tampil&alert=3');
+		header('location:?page=perjalanan-tampil&alert=3');
 	} else {
 		// jika gagal tampilkan pesan kesalahan
-		header('location: ?page=perjalanan-tampil&alert=1');
+		header('location:?page=perjalanan-tampil&alert=1');
 	}
 }
 }

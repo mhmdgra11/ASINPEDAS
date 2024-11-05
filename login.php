@@ -15,8 +15,8 @@
     ?> 
 	<div class="login-wrap customscroll d-flex align-items-center flex-wrap justify-content-center pd-50">
 		<div class="login-box bg-white box-shadow pd-30 border-radius-5">
-			<center><img src="src/images/logo-login.png"width="200" height="auto" alt="login"></center>
-			<h2 class="text-center mb-30">Login</h2>
+			<center><img src="src/images/ASINPEDAS1.png"width="230" height="auto" alt="login" rounded="100"></center>
+			<h6 class="text-left mb-10"><b>Silahkan Login</b></h6>
 			
 			<form action="cek_login.php" method="post">
 				<div class="input-group custom input-group-lg">

@@ -70,6 +70,7 @@ if (isset($_GET['id'])) {
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <input type="submit" class="btn btn-info btn-submit" name="update" value="Update">
+               
                 </div>
             </div>
         </form>
