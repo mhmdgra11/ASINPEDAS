@@ -1,7 +1,7 @@
 <div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="index.php">
-				<img src="src/images/logo_as.png" width="120" >
+				<img src="src/images/ASINPEDAS.png" width="180" >
 			</a>
 		</div>
 		<div class="menu-block customscroll">

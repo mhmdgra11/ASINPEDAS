@@ -15,8 +15,8 @@ include "isi-dashboard-admin.php";
                 <H1><b><?php echo $jum_user; ?></b></H1>
             </li>
             <li class="list-group-item list-group-item-default" align=" center"><b>ACCOUNT</b></li>
-            <li class="list-group-item"> <span class="badge"><?php echo $jum_user_pegawai; ?></span>Pegawai</li>
-            <li class="list-group-item"> <span class="badge"><?php echo $jum_user_admin; ?></span>Admin</li>
+            <li class="list-group-item"> <span class="badge btn btn-info"><?php echo $jum_user_pegawai; ?></span>Pegawai</li>
+            <li class="list-group-item"> <span class="badge btn btn-info"><?php echo $jum_user_admin; ?></span>Admin</li>
         </div>
     </div>
 
@@ -34,7 +34,7 @@ include "isi-dashboard-admin.php";
 <div class="col-md-7">
         <div class="list-group">
             <li class="list-group-item list-group-item-info" align=" center"><b>Laporan Penugasan</b></li>
-            <li class="list-group-item">
+            <li class="list-group-item ">
                 <b>Selesai</b> <?php echo $jum_laporan_selesai; ?> dari <?php echo $jum_perjalanan; ?> Penugasan.
             </li>
 
