@@ -15,7 +15,10 @@ $jum_user = mysqli_num_rows(mysqli_query($db, "SELECT * FROM user"));
 $jum_user_admin = mysqli_num_rows(mysqli_query($db, "SELECT * FROM user where level = 'admin'"));
 $jum_user_pegawai = mysqli_num_rows(mysqli_query($db, "SELECT * FROM user where level = 'pegawai'"));
 
-$jum_perjalanan = mysqli_num_rows(mysqli_query($db, "SELECT * FROM perjalanan"));
+$jum_penugasan = mysqli_num_rows(mysqli_query($db, "SELECT penugasan.*, perjalanan.* FROM penugasan JOIN perjalanan ON perjalanan.id_perjalanan = penugasan.id_perjalanan WHERE penugasan.id_user =  '$id_users'"));
+
+
+$jum_penugasan_selesai = mysqli_num_rows(mysqli_query($db, "SELECT penugasan.*, perjalanan.* FROM penugasan JOIN perjalanan ON perjalanan.id_perjalanan = penugasan.id_perjalanan WHERE perjalanan.status = 'selesai' AND penugasan.id_user =  '$id_users'"));
 
 $jum_laporan = mysqli_num_rows(mysqli_query($db, "SELECT * FROM laporan"));
 $jum_laporan_selesai = mysqli_num_rows(mysqli_query($db, "SELECT * FROM laporan where status = 'selesai'"));
