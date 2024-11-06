@@ -5,13 +5,17 @@
 if (empty($_GET["page"])) {
     include "dashboard/dashboard-admin.php";
 } elseif ($_GET['page'] == 'tambah') {
-    include "form-tambah.php";
+    include "pegawai/form-tambah.php";
+} elseif ($_GET['page'] == 'simpan') {
+    include "pegawai/proses-simpan.php";
 } elseif ($_GET['page'] == 'ubah') {
-    include "form-ubah.php";
+    include "pegawai/form-ubah.php";
+} elseif ($_GET['page'] == 'update') {
+    include "pegawai/proses-ubah.php";
 } elseif ($_GET['page'] == 'detail') {
     include "detail.php";
 } elseif ($_GET['page'] == 'tampil-data') {
-    include "tampil-data.php";
+    include "pegawai/tampil-data.php";
 
     // perjalanan
 

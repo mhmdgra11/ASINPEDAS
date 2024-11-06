@@ -9,7 +9,7 @@
 
       <div class="panel panel-default">
         <div class="panel-body">
-          <form class="form-horizontal" method="POST" action="proses-simpan.php" enctype="multipart/form-data">
+          <form class="form-horizontal" method="POST" action="?page=simpan" enctype="multipart/form-data">
 
           <div class="form-group">
               <label class="col-sm-2 control-label">ID_KARYAWAN</label>
@@ -77,7 +77,7 @@
               <div class="col-sm-3">
                 <select class="form-control" name="level" placeholder="Pilih Level" required>
                   <option value="admin">Admin</option>
-                  <option value="user">User</option>
+                  <option value="pegawai">Karyawan</option>
                 </select>
               </div>
             </div>

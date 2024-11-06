@@ -131,9 +131,9 @@ if (isset($_POST['cari'])) {
                 echo "  <tr>
                       <td width='20' >$no</td>
                       <td width='50'>$data[id_user]</td>
-                      <td width='150'>$data[username]</td>
-                      <td width='150'>$data[jabatan]</td>
-                      <td width='150'>$data[bidang]</td>
+                      <td width='200'>$data[username]</td>
+                      <td width='50'>$data[jabatan]</td>
+                      <td width='50'>$data[bidang]</td>
                       <td width='100' class='center'>
                         <div class=''>
                         <a data-toggle='tooltip' data-placement='top' title='Detail' style='margin-right:5px' class='btn btn-success btn-sm' href='?page=detail&id=$data[id_user]'>

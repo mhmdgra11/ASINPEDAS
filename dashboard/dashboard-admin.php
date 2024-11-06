@@ -4,7 +4,7 @@
 include "isi-dashboard-admin.php";
 ?>
 
-<h4><?php echo $ucapan . ", " . $usernames ?></h4>
+<h4><b><?php echo $ucapan . ", " . $usernames ?><b></h4>
 <hr>
 <div class="row">
 
@@ -31,7 +31,7 @@ include "isi-dashboard-admin.php";
 </div>
 
 
-<div class="col-md-7">
+<div class="col-md-8">
         <div class="list-group">
             <li class="list-group-item list-group-item-info" align=" center"><b>Laporan Penugasan</b></li>
             <li class="list-group-item ">

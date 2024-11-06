@@ -4,6 +4,7 @@
 	<?php include('include/head.php'); ?>
 </head>
 <body>
+
 <?php
     if (isset($_GET['pesan'])) {
         if ($_GET['pesan'] == "gagal") {

@@ -21,7 +21,7 @@ $namas = $data['username'];
 			<div class="user-info-dropdown">
 				<div class="dropdown">
 					<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-					<span class="user-name">Aplikasi Sistem Informasi Manajmen Perjalanan Dinas</span>
+					<span class="user-name">Aplikasi Sistem Informasi Manajemen Perjalanan Dinas</span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
 					<a class="dropdown-item"><i class="icon-copy fa fa-user-circle-o" aria-hidden="true"></i><?php echo $_SESSION['id_user'] ." - ".$namas." - ". $_SESSION['level']; ?> </a>
